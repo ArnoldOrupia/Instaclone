@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whitecolor"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="-8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/feed_profile_imgview"
+            android:layout_width="41dp"
+            android:layout_height="73dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#b2b3b5"
+            android:layout_gravity="top"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.06"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/instagramblue"
+            android:id="@+id/feed_tv_username"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/feed_profile_imgview"
+            android:layout_toEndOf="@+id/feed_profile_imgview" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/feed_tv_timestamp"
+            android:gravity="right"
+            android:layout_marginBottom="25dp"
+            android:layout_alignBottom="@+id/feed_tv_username"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp" />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"
+            android:id="@+id/feed_imageView"
+            android:layout_below="@+id/feed_profile_imgview"
+            android:contentDescription="image"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_below="@+id/feed_imageView"
+            android:layout_marginTop="-5dp">
+
+            <com.like.LikeButton
+                app:icon_type="heart"
+                app:icon_size="40dp"
+                android:id="@+id/feed_heart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/feed_tv_likes_cnt"
+                android:textColor="@color/instagramblue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="-20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Likes"
+                android:textStyle="bold"
+                android:textColor="@color/instagramblue"
+                android:id="@+id/feed_tv_likes"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="-20dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

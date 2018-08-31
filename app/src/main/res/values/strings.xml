@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Instaclonegram</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">1731480513733786</string>
+
+    <string-array name="image_ids">
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_2</item>
+        <item>@drawable/image_3</item>
+        <item>@drawable/image_4</item>
+    </string-array>
+
+</resources>

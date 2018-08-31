@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/whitecolor"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="top">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/feed_profile_imgview"
+                        android:layout_width="87dp"
+                        android:layout_height="119dp"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="#b2b3b5"
+                        android:layout_gravity="top"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="5dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:layout_marginTop="20dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:id="@+id/tv_posts_cnt"
+                                    android:layout_weight="1"
+                                    android:textStyle="bold"
+                                    android:gravity="center|bottom" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="posts"
+                                    android:id="@+id/tv_posts"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textStyle="bold"
+                                    android:id="@+id/tv_followers_cnt"
+                                    android:layout_weight="1"
+                                    android:gravity="center|bottom" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="followers"
+                                    android:id="@+id/tv_followers"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textStyle="bold"
+                                    android:id="@+id/tv_following_cnt"
+                                    android:layout_weight="1"
+                                    android:gravity="center|bottom" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:text="following"
+                                    android:id="@+id/tv_following"
+                                    android:layout_weight="1"
+                                    android:gravity="center|top"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:text="EDIT YOUR PROFILE"
+                            android:textColor="@color/darkgreycolor"
+                            android:background="@color/greycolor"
+                            android:id="@+id/button_editprofile" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Kevin Systrom"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_profile_username"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="CEO &amp; Co-founder of Instagram"
+                        android:id="@+id/tv_profile_description"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="www.instagram.com"
+                        android:id="@+id/tv_profile_link"
+                        android:layout_weight="1"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        android:textColorLink="#599edf"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="New Button"
+                    android:id="@+id/button"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="New Button"
+                    android:id="@+id/button2"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="New Button"
+                    android:id="@+id/button3"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="New Button"
+                    android:id="@+id/button4"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/profile_gridView"
+                android:layout_width="fill_parent"
+                android:layout_height="280dp"
+                android:drawSelectorOnTop="true"
+                android:gravity="center"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp"
+                android:horizontalSpacing="2dp"
+                android:focusable="true"
+                android:clickable="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

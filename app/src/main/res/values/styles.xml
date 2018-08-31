@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MySectionTheme" >
+        <item name="sectionColorIcon">#00F</item>
+        <item name="sectionColorText">#FFFFFF</item>
+        <item name="sectionColorNotification">#00F</item>
+        <item name="sectionBackgroundColorPressed">#160000FF</item>
+        <item name="sectionBackgroundColorSelected">#0A0000FF</item>
+        <item name="sectionBackgroundColor">#000000FF</item>
+    </style>
+
+    <style name="MyNavigationDrawerTheme" parent="MaterialNavigationDrawerTheme">
+        <item name="colorPrimary">#2d5b81</item>
+        <item name="colorPrimaryDark">#2d5b81</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="singleAccount">true</item>
+        <item name="drawerColor">#2d5b81</item>
+        <item name="sectionStyle">@style/MySectionTheme</item>
+        <item name="subheaderStyle">@style/MySubheaderTheme</item>
+    </style>
+
+    <style name="MySubheaderTheme">
+        <item name="subheaderTitleColor">#00F</item>
+    </style>
+
+</resources>
